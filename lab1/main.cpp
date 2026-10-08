@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
 
-    // Задание 1
     cout << "Task 1" << endl;
 
     DynamicArray a(3);
@@ -21,7 +20,6 @@ int main() {
     cout << a.get(1) << endl;
 
 
-    // Задание 2
     cout << "\nTask 2" << endl;
 
     DynamicArray b(a);
@@ -30,7 +28,6 @@ int main() {
     b.print();
 
 
-    // Задание 3
     cout << "\nTask 3" << endl;
 
     a.pushBack(40);
@@ -42,7 +39,6 @@ int main() {
     cout << a.getSize() << endl;
 
 
-    // Задание 4
     cout << "\nTask 4" << endl;
 
     DynamicArray c(2);
