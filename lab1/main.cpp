@@ -39,5 +39,28 @@ int main() {
 
     cout << "Difference: ";
     difference.print();
+        cout << "\nTask 5: Exceptions" << endl;
+
+    try {
+        cout << a.get(100) << endl;
+    }
+    catch (const out_of_range& e) {
+        cout << "out_of_range: " << e.what() << endl;
+    }
+
+    try {
+        a.set(0, 200);
+    }
+    catch (const invalid_argument& e) {
+        cout << "invalid_argument: " << e.what() << endl;
+    }
+
+    try {
+        int* memory = new int[1000000000000ULL];
+        delete[] memory;
+    }
+    catch (const bad_alloc& e) {
+        cout << "bad_alloc: " << e.what() << endl;
+    }
     return 0;
 }
