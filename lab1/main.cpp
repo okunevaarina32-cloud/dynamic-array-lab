@@ -56,8 +56,7 @@ int main() {
     }
 
     try {
-        int* memory = new int[1000000000000ULL];
-        delete[] memory;
+        throw bad_alloc();
     }
     catch (const bad_alloc& e) {
         cout << "bad_alloc: " << e.what() << endl;
